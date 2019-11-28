@@ -1,0 +1,15 @@
+<tr>
+  <td><%= lesson.id %></td>
+  <td><%= lesson.title %></td>
+  <td>
+    <%= link_to lesson_path(lesson), class: "btn btn-sm btn-primary" do %>
+      <span class="glyphicon glyphicon-eye-open"></span>
+    <% end %>
+    <%= link_to edit_lesson_path(lesson), class: "btn btn-sm btn-success" do %>
+      <span class="glyphicon glyphicon-pencil"></span>
+    <% end %>
+    <%= link_to lesson_path(lesson), method: :delete, class: "btn btn-sm btn-danger" do %>
+      <span class="glyphicon glyphicon-trash"></span>
+    <% end %>
+  </td>
+</tr>
